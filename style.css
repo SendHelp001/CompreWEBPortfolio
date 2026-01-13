@@ -142,8 +142,8 @@ a:active {
   background: linear-gradient(135deg, #ffffff00 40%, #ffffffaa 50%, #ffffff00 60%);
   background-size: 300% 300%;
   background-position: 150% 150%;
-  -webkit-mask: url("./images/profile.png") no-repeat center / contain;
-  mask: url("./images/profile.png") no-repeat center / contain;
+  -webkit-mask: url("./images/profile.png") no-repeat center / cover;
+  mask: url("./images/profile.png") no-repeat center / cover;
   transition: background-position 0s;
 }
 
