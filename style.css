@@ -322,6 +322,9 @@ a:active {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border: 1px solid #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .project-card:hover {
