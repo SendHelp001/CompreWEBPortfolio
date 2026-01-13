@@ -21,7 +21,7 @@ body {
   width: 100%;
   background-color: #6b6b6b00;
   color: rgb(255, 255, 255);
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 80px;
   z-index: 1000;
