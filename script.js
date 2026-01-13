@@ -26,6 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+  //burgir
+  const menuIcon = document.querySelector(".menu-icon");
+  const navMenu = document.querySelector(".nav-contents ul");
+
+  if (menuIcon && navMenu) {
+    menuIcon.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  }
+
   //loader
   setTimeout(() => {
     document.body.classList.add("loaded");
