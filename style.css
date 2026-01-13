@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  background-color: #6b6b6b00;
+  color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+}
+.nav-container {
+  width: auto;
+  height: auto;
+  background-color: #ffffff00;
+  display: flex;
+  top: 0;
+}
+
+.nav-contents {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-contents ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.nav-contents a:link,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+.nav-contents a:hover {
+  color: yellow;
+}
+
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 0 30px;
+}
+.sublogo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  margin-left: 3px;
+  display: block;
+}
+
+
+.hero {
+  margin-top: -10vh;
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: #000000;
+  background: url("rye_ivanshishkin.jpg");
+  background-size: cover;
+}
+.hero image {
+  filter: brightness(60%);
+}
+
+.hero span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.hero h1 {
+  margin: 30vh 0 0 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 50px;
+}
+
+.end {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding: 40px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+}
+
+.end a:link,
+a:visited,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.end a:active {
+  text-decoration: underline;
+}
+
+.end ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
