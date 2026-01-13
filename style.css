@@ -115,20 +115,18 @@ a:active {
 }
 /* about */
 .about {
-  min-height: 95v;
+  margin-top: -5em;
+  min-height: 90vh;
   justify-content: center;
-  align-items: center;
   display: flex;
-  width: auto;
+  width: 100%;
   text-align: left;
-  padding: 50px 20px;
   color: white;
 }
 
 .about-container {
   width: auto;
   display: flex;
-
   flex-direction: row;
   max-width: 1200px;
   width: 100%;
@@ -139,13 +137,13 @@ a:active {
 
 .about-left {
   flex: 1;
-  min-width: 300px;
+  min-width: 400px;
   display: flex;
   justify-content: center;
 }
 
 .profile-container {
-  width: 350px;
+  width: 450px;
   height: 500px;
   position: relative;
   display: inline-block;
@@ -178,7 +176,7 @@ a:active {
   transition: background-position 0.6s ease-in-out;
 }
 
-.about-right-side {
+.about-middle {
   flex: 1.5;
   min-width: 300px;
   display: flex;
@@ -186,12 +184,12 @@ a:active {
   gap: 20px;
 }
 
-.about-right-side h1 {
-  font-family: "Michroma", sans-serif;
+.about-middle h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .about-bio {
@@ -203,20 +201,17 @@ a:active {
   color: #cccccc;
 }
 
-.details-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.about-right-sidev h3 {
+.about-middle h3 {
   font-family: "Michroma", sans-serif;
   font-size: 20px;
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 2px;
+}
+
+.education-section {
+  margin-top: 20px;
 }
 
 .detail-item {
@@ -234,13 +229,56 @@ a:active {
 .detail-item .school,
 .detail-item .role {
   font-size: 16px;
-  color: #dddddd;
+  color: #dcdcdc;
 }
 
 .detail-item .degree {
   font-size: 14px;
-  color: #aaaaaa;
+  color: #a8a8a8;
   font-style: italic;
+}
+.about-right {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.about-right h3 {
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  background-color: #222;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: "Michroma", sans-serif;
+  font-size: 12px;
+  border: 1px solid #3b3b3b;
+  display: inline-block;
+}
+
+.contact-mini {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: gray;
 }
 
 /* end/footer */
