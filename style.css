@@ -84,7 +84,7 @@ a:active {
 /* hero */
 .hero {
   margin-top: -80px;
-  min-height: 100vh;
+  min-height: 110vh;
   width: auto;
   text-align: center;
   padding: 10px;
@@ -475,6 +475,7 @@ a:hover {
   .hero span {
     font-size: 40px;
   }
+
   .hero h1 {
     font-size: 32px;
     margin-top: 20vh;
@@ -489,7 +490,7 @@ a:hover {
   }
 
   .about-title {
-    margin: 20px 0 !important;
+    margin: 3em 0 !important;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 35px !important;
