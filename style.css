@@ -1,3 +1,5 @@
+/* globals */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +8,12 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: #101010;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23f1f0f1' fill-opacity='0.13'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
   color: #ffffff;
 }
+
+/* nav/header */
 
 .header {
   width: 100%;
@@ -37,9 +42,10 @@ body {
 }
 
 .nav-contents ul {
+  font-family: "Montserrat", sans-serif;
   list-style-type: none;
   display: flex;
-  gap: 15px;
+  gap: 1.5em;
   font-size: 30px;
 }
 
@@ -58,14 +64,18 @@ a:active {
   font-size: 40px;
   font-weight: bold;
   margin: 0 0 0 30px;
+  -webkit-text-stroke: 1px black;
 }
 .sublogo {
   font-family: "Orbitron", sans-serif;
   font-size: 15px;
   margin-left: 3px;
   display: block;
+  -webkit-text-stroke: 1px black;
+  z-index: 9999;
 }
 
+/* hero */
 .hero {
   margin-top: -80px;
   height: 100vh;
@@ -74,7 +84,7 @@ a:active {
   padding: 10px;
   color: white;
   background-color: #000000;
-  background: url("rye_ivanshishkin.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("rye_ivanshishkin.jpg");
   background-size: cover;
 }
 .hero image {
@@ -100,12 +110,52 @@ a:active {
   text-align: left;
   font-size: 100px;
 }
+/* about */
 
+.about {
+  height: 50vh;
+  width: auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: #000000;
+  background: url("");
+  background-size: cover;
+}
+.profile-pic {
+  width: 200px;
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.about span {
+  letter-spacing: 3px;
+  font-size: 110px;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-weight: 900;
+}
+.about span:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.08);
+}
+
+.about h1 {
+  margin: 30vh 0 0 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 100px;
+}
+
+/* end/footer */
 .end {
   font-family: "Orbitron", sans-serif;
   text-align: center;
   padding: 40px;
   color: rgb(255, 255, 255);
+  background-color: black;
   display: flex;
   font-size: 30px;
   justify-content: space-between;
