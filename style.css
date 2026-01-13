@@ -80,7 +80,7 @@ a:active {
 /* hero */
 .hero {
   margin-top: -80px;
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
   text-align: center;
   padding: 10px;
@@ -115,7 +115,7 @@ a:active {
 /* about */
 
 .about {
-  height: 50vh;
+  min-height: 50vh;
   width: auto;
   text-align: left;
   padding: 10px;
