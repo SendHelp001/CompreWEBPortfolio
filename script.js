@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-//nav links
+  //nav links
   const navLinks = document.querySelectorAll(".nav-contents a");
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-//logo scroll to top
+  //logo scroll to top
   const logo = document.querySelector(".logo");
   if (logo) {
     logo.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-//loader
+  //loader
   setTimeout(() => {
     document.body.classList.add("loaded");
     setTimeout(() => {
@@ -36,4 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, 500);
   }, 3500);
+  // Initialize AOS
+  AOS.init({
+    duration: 1200, // values from 0 to 3000, with step 50ms
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+  });
 });
