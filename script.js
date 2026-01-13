@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
+  document.body.style.overflow = "hidden";
+
   //nav links
   const navLinks = document.querySelectorAll(".nav-contents a");
   navLinks.forEach((link) => {
@@ -24,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //loader
   setTimeout(() => {
     document.body.classList.add("loaded");
+    document.body.style.overflow = "auto";
     setTimeout(() => {
       const loader = document.getElementById("loader-wrapper");
       if (loader) {
