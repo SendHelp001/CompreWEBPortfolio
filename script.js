@@ -1,5 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", () => {
+//nav links
   const navLinks = document.querySelectorAll(".nav-contents a");
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+//logo scroll to top
+  const logo = document.querySelector(".logo");
+  if (logo) {
+    logo.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+//loader
   setTimeout(() => {
     document.body.classList.add("loaded");
     setTimeout(() => {

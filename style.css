@@ -66,6 +66,7 @@ a:active {
   font-size: 40px;
   font-weight: 100;
   margin: 0 0 0 30px;
+  cursor: pointer;
 }
 .sublogo {
   font-family: "Michroma", sans-serif;
