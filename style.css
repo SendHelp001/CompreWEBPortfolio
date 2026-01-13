@@ -60,18 +60,16 @@ a:active {
 }
 
 .logo {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Michroma", sans-serif;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 100;
   margin: 0 0 0 30px;
-  -webkit-text-stroke: 1px black;
 }
 .sublogo {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Michroma", sans-serif;
   font-size: 15px;
   margin-left: 3px;
   display: block;
-  -webkit-text-stroke: 1px black;
   z-index: 9999;
 }
 
@@ -84,7 +82,7 @@ a:active {
   padding: 10px;
   color: white;
   background-color: #000000;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("rye_ivanshishkin.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/rye_ivanshishkin.jpg");
   background-size: cover;
 }
 .hero image {
@@ -122,11 +120,36 @@ a:active {
   background: url("");
   background-size: cover;
 }
-.profile-pic {
-  width: 200px;
-  height: 200px;
 
+.profile-pic {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+/* from codepen called hover shine then modified to fit my own picture */
+.profile-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.profile-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #ffffff00 40%, #ffffffaa 50%, #ffffff00 60%);
+  background-size: 300% 300%;
+  background-position: 150% 150%;
+  -webkit-mask: url("./images/profile.png") no-repeat center / contain;
+  mask: url("./images/profile.png") no-repeat center / contain;
+  transition: background-position 0s;
+}
+
+.profile-container:hover::after {
+  background-position: -50% -50%;
+  transition: background-position 0.6s ease-in-out;
 }
 
 .about span {
@@ -149,9 +172,18 @@ a:active {
   font-size: 100px;
 }
 
+.about-class-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 20px 150px 0 150px;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 30em;
+}
+
 /* end/footer */
 .end {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Michroma", sans-serif;
   text-align: center;
   padding: 40px;
   color: rgb(255, 255, 255);
