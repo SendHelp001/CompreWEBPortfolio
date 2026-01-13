@@ -22,6 +22,7 @@ body {
   position: sticky;
   top: 0;
   height: 80px;
+  z-index: 1000;
 }
 .nav-container {
   width: auto;
@@ -113,16 +114,45 @@ a:active {
   font-size: 100px;
 }
 /* about */
-
 .about {
-  min-height: 50vh;
+  min-height: 95v;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   width: auto;
   text-align: left;
-  padding: 10px;
+  padding: 50px 20px;
   color: white;
-  background-color: #000000;
-  background: url("");
-  background-size: cover;
+}
+
+.about-container {
+  width: auto;
+  display: flex;
+
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px white;
+  z-index: 99;
 }
 
 .profile-pic {
@@ -131,14 +161,6 @@ a:active {
   object-fit: cover;
 }
 
-/* from codepen called hover shine then modified to fit my own picture */
-.profile-container {
-  width: 350px;
-  height: 500px;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
 .profile-container::after {
   content: "";
   position: absolute;
@@ -156,33 +178,69 @@ a:active {
   transition: background-position 0.6s ease-in-out;
 }
 
-.about span {
-  letter-spacing: 3px;
-  font-size: 110px;
-  font-family: "Montserrat", sans-serif;
-  display: inline-block;
-  font-weight: 900;
-}
-.about span:hover {
-  transition: 0.3s ease-in-out;
-  transform: scale(1.08);
+.about-right-side {
+  flex: 1.5;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.about h1 {
-  margin: 0 0 0 40px;
-  font-family: "Montserrat", sans-serif;
+.about-right-side h1 {
+  font-family: "Michroma", sans-serif;
+  font-size: 60px;
   font-weight: 700;
-  text-align: left;
-  font-size: 6em;
+  margin: 0;
+  color: #eeeeee;
 }
 
-.about-class-p {
+.about-bio {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin: 20px 150px 0 150px;
+  font-size: 18px;
+  margin: 0;
   text-align: justify;
   line-height: 1.6;
-  max-width: 30em;
+  color: #cccccc;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.about-right-sidev h3 {
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.detail-item .year {
+  font-weight: 800;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.detail-item .school,
+.detail-item .role {
+  font-size: 16px;
+  color: #dddddd;
+}
+
+.detail-item .degree {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-style: italic;
 }
 
 /* end/footer */
