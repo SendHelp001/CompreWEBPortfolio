@@ -1,6 +1,10 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease;
+}
+
+body {
   font-family: Arial, sans-serif;
   background-color: black;
   color: #ffffff;
@@ -12,6 +16,7 @@ body {
   color: rgb(255, 255, 255);
   position: sticky;
   top: 0;
+  height: 80px;
 }
 .nav-container {
   width: auto;
@@ -61,9 +66,8 @@ a:active {
   display: block;
 }
 
-
 .hero {
-  margin-top: -10vh;
+  margin-top: -80px;
   height: 100vh;
   width: auto;
   text-align: center;
@@ -78,15 +82,23 @@ a:active {
 }
 
 .hero span {
+  letter-spacing: 3px;
+  font-size: 110px;
   font-family: "Montserrat", sans-serif;
+  display: inline-block;
   font-weight: 900;
 }
+.hero span:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.08);
+}
+
 .hero h1 {
   margin: 30vh 0 0 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: left;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 .end {
