@@ -78,7 +78,7 @@ a:active {
 }
 
 .content-container {
-  display: inline;
+  display: block;
 }
 
 /* hero */
@@ -146,8 +146,10 @@ a:active {
 }
 
 .profile-container {
-  width: 450px;
-  height: 500px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 450/500;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -246,8 +248,15 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 16.4em;
+  padding-top: 250px;
+
   align-self: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-right {
+    padding-top: 0;
+  }
 }
 
 .about-right h3 {
@@ -576,6 +585,36 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  .section-title {
+    margin-left: 1em !important;
+    font-size: 50px !important;
+    text-align: center;
+  }
+
+  .about-container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .about-left,
+  .about-middle,
+  .about-right {
+    min-width: auto;
+    flex-basis: auto;
+  }
+
+  .about-right {
+    padding-top: 0;
+    align-self: center;
+  }
+
+  .hero h1 {
+    margin-left: 20px;
+    font-size: 80px;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -584,4 +623,11 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.section-title {
+  margin: 40px 0 0 5.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
 }
