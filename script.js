@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuIcon && navMenu) {
     menuIcon.addEventListener("click", () => {
       navMenu.classList.toggle("show");
+      menuIcon.classList.toggle("fa-bars");
+      menuIcon.classList.toggle("fa-xmark");
     });
   }
 

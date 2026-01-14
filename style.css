@@ -461,20 +461,28 @@ a:hover {
     cursor: pointer;
   }
   .nav-contents ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 80px;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
-    padding: 20px 0;
+    padding: 0;
     text-align: center;
     border-top: 1px solid #333;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding 0.4s ease;
   }
 
   .nav-contents ul.show {
-    display: flex;
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    padding: 20px 0;
   }
 
   .nav-contents a:hover {
